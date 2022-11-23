@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🪄 linear-gradient Background Animation Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: linear-gradient(to right , #183048, #4c637a);" class="body body-2">
+    
+    <header>
+        <div class="header-div">
+            <div class="left-header">
+                <h2>linear-gradient Background Animation</h2>
+                <p>Generator</p>
+            </div>
+            <div class="right-header">
+                <button class="github-btn">
+                    <img src="image/icon-github.svg">
+                    <span>View on GitHub</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-div">
+            <div class="color-inputs">
+                <div class="color-left">
+                    <input class="color-picker-1 picker" type="color" value="#183048">
+                </div>
+                <div class="color-right">
+                    <input class="color-picker-2 picker" type="color" value="#4c637a">
+                </div>
+            </div>
+            <div class="generate-buttom">
+                <button id="generate">Generate</button>
+            </div>
+            <div class="output">
+                <button class="copy">Copy</button>
+                <textarea disabled class="code-output">
+background: linear-gradient(to right , #183048 , #4c637a);
+background-size: 400% 400%;
+animation: changeBG 4s infinite;
+@keyframes changeBG {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}               </textarea>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with 🤍 by <a href="https://github.com/mhyar-nsi" target="_blank">Mahyar</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
