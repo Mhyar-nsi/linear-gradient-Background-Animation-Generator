@@ -7,7 +7,7 @@ const codeOutput = document.querySelector('.code-output');
 const copy = document.querySelector('.copy');
 
 githubBtn.addEventListener('click' , () => {
-    window.open('https://github.com/Mhyar-nsi/Password-Generator' , '_blank');
+    window.open('https://github.com/Mhyar-nsi/linear-gradient-Background-Animation-Generator' , '_blank');
 });
 
 generateBtn.addEventListener('click' , ()=> {
