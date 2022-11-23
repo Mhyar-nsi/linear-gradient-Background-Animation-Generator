@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    background-size: 400% 400%;
+    animation: changeBG 4s infinite;
+    font-family: 'DM Mono' , monospace;
+}
+@keyframes changeBG {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+::selection {
+    background: #000;
+}
+h2 {
+    font-size: 25px;
+    color: #fff;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+p {
+    font-size: 19px;
+    color: #fff;
+}
+
+header {
+    margin: 10px 80px;
+}
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.github-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2329;
+    color: #a4b2bd;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+.github-btn:hover {
+    background-color: #15181c;
+}
+.github-btn img {
+    width: 30px;
+}
+.github-btn span {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+main {
+    margin: 20px 30px;
+}
+.main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.color-inputs {
+    display: flex;
+    margin: 10px 0;
+}
+.picker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 70px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.picker::-webkit-color-swatch {
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+.color-left {
+    margin: 0 10px;
+}
+.color-right {
+    margin: 0 10px;
+}
+#generate {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: .2s;
+}
+#generate:hover {
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.389);
+}
+.output {
+    margin-top: 50px;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.copy {
+    position: absolute;
+    right: 0;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 10px;
+    transition: .2s;
+}
+.copy:hover {
+    background-color: #fff;
+    box-shadow: 0 0 0 5.5px rgba(255, 255, 255, 0.389);
+    color: #000;
+}
+
+textarea {
+    overflow: hidden; 
+    word-wrap: break-word; 
+    outline: none;
+    resize: none; 
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    padding: 55px 35px 10px;
+    width: 500px;
+    height: 300px;
+}
+
+footer {
+    margin-top: 50px;
+}
+footer p {
+    text-align: center;
+}
+footer p a {
+    text-decoration: none;
+    color: #a4b2bd;
+}
+@media screen and (max-width : 700px) {
+    .left-header {
+        display: none;
+    }
+    .header-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        margin: 20px 5px;
+    }
+    textarea {
+        width: 300px;
+        height: 380px;
+    }
+    footer {
+        margin-top: 40px;
+    }
+}
